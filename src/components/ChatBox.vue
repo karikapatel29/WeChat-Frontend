@@ -232,7 +232,7 @@ export default {
         // Emit the message via socket
         this.socket.emit("message", response.data.data);
 
-        // Clear the message input field after sending
+        // Clears the message input field after sending
         this.currmessage = "";
         this.scrollbottom();
       } catch (error) {
